@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    tools:context=".Activities.logins">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/gradient"
+        android:layout_weight="0.7">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/ic_logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/registration"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:isScrollContainer="true">
+                <TextView
+                    android:id="@+id/signinnow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:gravity="center"
+                    android:text="Sign In Now"
+                    android:textColor="#1585BC"
+                    android:textSize="25dp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/square"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/right_single_line"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/faphone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="#91BE1E"
+                            android:textSize="20dp"
+                            android:text="@string/fa_phone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/mobs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Phone Number"
+                            android:inputType="phone"
+                            android:letterSpacing=".06"
+                            android:maxLength="10"
+                            android:textColor="#D4D4D4"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:paddingLeft="16dp"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sendotp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/sendotpbutton"
+                    android:gravity="center"
+                    android:text="Send OTP"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/logintrouble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trouble with logging in?"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/notamember"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not a member?"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/Registers"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="Register"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textColor="#1190CD" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
